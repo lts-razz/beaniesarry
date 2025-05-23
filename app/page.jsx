@@ -19,7 +19,7 @@ export default function Home() {
     <>
       <div className="w-full h-full relative bg-gradient-to-b from-[#ffffff] via-[#fffb7b] to-[#fff958]">
         <div className="flex relative bg-transparent flex-col items-center justify-center w-full h-screen overflow-hidden">
-          <h1 className="text-[5em] font-bold text-center w-screen">
+          <h1 className="text-[5rem] sm:text-[4rem] font-bold text-center w-screen">
             HELLO BEANIEEEE!
           </h1>
           <label className="relative">
@@ -48,25 +48,29 @@ export default function Home() {
         {/* THIS IS THE END OF SCREEN 1 AND START OF SCREEN 2 */}
         <div className="flex relative bg-transparent flex-col items-center justify-center w-full h-screen overflow-hidden">
           <div>
-            <div className="grid sm:grid-cols-3 md:grid-cols-3 gap-1 p-4 w-full h-full items-center justify-center">
+            <div className="grid grid-cols-3 gap-1 p-4 w-full h-full items-center justify-center">
               {images.map((src, index) => (
-                <div className="" key={index}>
+                <div key={index}>
                   <Image
                     src={src}
                     alt={`Collage ${index + 1}`}
                     width={500}
                     height={500}
-                    className="object-cover rounded-lg lg:w-75 lg:h-75 sm:w-50 sm:h-50"
+                    className="object-cover outline outline-white rounded-lg w-[33vh] h-[33vh] shadow-2xl hover:scale-105 transition-transform duration-300 ease-in-out"
                   />
                 </div>
               ))}
             </div>
           </div>
-          <h2 className="bg-amber-300 text-[4em]/18 font-bold text-red-700 text-center absolute border-5 border-white w-75 h-75 rounded-lg">
-            <div className="mt-11">I LOVE </div>
-            <div className="text-[5rem]/15">A L L</div> <div>OF YOU </div>
+          <h2 className=" outline outline-white bg-amber-300 text-[7vh] font-bold text-red-700 text-center absolute w-[33vh] h-[33vh] rounded-lg">
+            <div className="flex flex-col justify-center items-center w-full h-full">
+              <div>I LOVE </div>
+              <div className="text-[9vh]/15">A L L</div> <div>OF YOU </div>
+              <footer className="bottom-0 underline text-[2vh]">
+                05.23.2025
+              </footer>
+            </div>
           </h2>
-          <footer className="absolute bottom-0"> 05.23.2025 </footer>
         </div>
         {/* THIS IS THE END OF SCREEN 2 AND START OF SCREEN 3 */}
         {/* <div className="flex relative bg-transparent flex-col items-center justify-center w-full h-screen overflow-hidden"></div> */}
@@ -75,11 +79,13 @@ export default function Home() {
         {/* THIS IS THE END OF SCREEN 4 AND START OF SCREEN 5 */}
         {/* <div className="flex relative bg-transparent flex-col items-center justify-center w-full h-screen overflow-hidden"></div> */}
         {/* THIS IS THE END OF SCREEN 5 AND START OF SCREEN 6 */}
-        <footer className="flex flex-col justify-center items-center bg-red-700">
+        <footer className="mt-10 p-4 flex flex-col justify-center items-center bg-red-700">
           <span className="text-white font-bold w-screen text-center">
             PAGE STILL IN CONSTRUCTION
           </span>
-          <span className="w-screen text-center text-sm text-white">please come again next time!</span>
+          <span className="w-screen text-center text-sm text-white">
+            please come again next time!
+          </span>
         </footer>
       </div>
     </>
