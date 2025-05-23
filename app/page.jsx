@@ -48,7 +48,7 @@ export default function Home() {
         {/* THIS IS THE END OF SCREEN 1 AND START OF SCREEN 2 */}
         <div className="flex relative bg-transparent flex-col items-center justify-center w-full h-screen overflow-hidden">
           <div>
-            <div className="grid grid-cols-2 md:grid-cols-3 gap-1 p-4 w-full h-full items-center justify-center">
+            <div className="grid s:grid-cols-2 md:grid-cols-3 gap-1 p-4 w-full h-full items-center justify-center">
               {images.map((src, index) => (
                 <div className="" key={index}>
                   <Image
@@ -56,7 +56,7 @@ export default function Home() {
                     alt={`Collage ${index + 1}`}
                     width={500}
                     height={500}
-                    className="object-cover rounded-lg w-75 h-75"
+                    className="object-cover rounded-lg lg:w-75 lg:h-75 sm:w-50 sm:h-50"
                   />
                 </div>
               ))}
