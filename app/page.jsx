@@ -48,7 +48,7 @@ export default function Home() {
         {/* THIS IS THE END OF SCREEN 1 AND START OF SCREEN 2 */}
         <div className="flex relative bg-transparent flex-col items-center justify-center w-full h-screen overflow-hidden">
           <div>
-            <div className="grid s:grid-cols-2 md:grid-cols-3 gap-1 p-4 w-full h-full items-center justify-center">
+            <div className="grid sm:grid-cols-3 md:grid-cols-3 gap-1 p-4 w-full h-full items-center justify-center">
               {images.map((src, index) => (
                 <div className="" key={index}>
                   <Image
