@@ -62,10 +62,10 @@ export default function Home() {
               ))}
             </div>
           </div>
-          <h2 className=" outline outline-white bg-amber-300 text-[7vh] font-bold text-red-700 text-center absolute w-[33vh] h-[33vh] rounded-lg">
+          <h2 className=" outline outline-white bg-amber-300 text-[7vh]/[7.5vh] font-bold text-red-700 text-center absolute w-[33vh] h-[33vh] rounded-lg">
             <div className="flex flex-col justify-center items-center w-full h-full">
               <div>I LOVE </div>
-              <div className="text-[9vh]/15">A L L</div> <div>OF YOU </div>
+              <div className="text-[9vh]/[8.5vh]">A L L</div> <div>OF YOU </div>
               <footer className="bottom-0 underline text-[2vh]">
                 05.23.2025
               </footer>
